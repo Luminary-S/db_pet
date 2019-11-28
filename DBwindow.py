@@ -43,7 +43,7 @@ class DBMainWindow(QMainWindow, Ui_MainWindow):
         self.id = id
         # print(type(self.id))
         # print(self.id)
-        str = self.id + 'Pet Management System'
+        str = "Store Holder:  " + self.id + ' ! Welcome to your Pet Management System'
         self.setWindowTitle(  str )
 
     def init_show(self):
@@ -62,7 +62,7 @@ class DBMainWindow(QMainWindow, Ui_MainWindow):
 
     @pyqtSlot()
     def on_sta_help_btn_clicked(self):
-        str = 'In Query frame, through "load", you can load all pets attributes to the combobox; after the chosen of every attribute in the combobox, press "Preview", the pet image can be seen in the Pet Image frame.'
+        str =  'In Statistic frame, some important sum, average data can be shown by pressing "obtain".'
         self.intro_plainTextEdit.setPlainText(str)
 
     @pyqtSlot()
@@ -76,8 +76,16 @@ class DBMainWindow(QMainWindow, Ui_MainWindow):
         #                                                   "getOpenFileName", "./",
         #                                                   "All Files (*)")
         label = self.pet_img_label
-        imgName, imgType = QFileDialog.getOpenFileName(self, "open image", "", "*.jpg;;*.png;;All Files(*)")
+        imgName, imgType = QFileDialog.getOpenFileName(self, "open image", "", "*jpeg;;All Files(*);;*.jpg;;*.png")
         jpg = QtGui.QPixmap(imgName).scaled(label.width(), label.height())
         label.setPixmap(jpg)
 
+    @pyqtSlot()
+    def on_trans_help_btn_clicked(self):
+        str = 'In Transaction frame, you can keep the sell and add record.'
+        self.intro_plainTextEdit.setPlainText(str)
 
+    @pyqtSlot()
+    def on_img_help_btn_clicked(self):
+        str='In Image frame, you can check the pet picture or upload a file to preview.'
+        self.intro_plainTextEdit.setPlainText(str)

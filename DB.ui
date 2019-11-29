@@ -79,7 +79,7 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QComboBox" name="comboBox">
+        <widget class="QComboBox" name="qu_name_comboBox">
          <item>
           <property name="text">
            <string>dog</string>
@@ -88,7 +88,7 @@
         </widget>
        </item>
        <item row="1" column="4" colspan="2">
-        <widget class="QComboBox" name="comboBox_4">
+        <widget class="QComboBox" name="qu_color_comboBox">
          <item>
           <property name="text">
            <string>dog</string>
@@ -97,7 +97,7 @@
         </widget>
        </item>
        <item row="1" column="6">
-        <widget class="QComboBox" name="comboBox_5">
+        <widget class="QComboBox" name="qu_gender_comboBox">
          <item>
           <property name="text">
            <string>dog</string>
@@ -106,7 +106,7 @@
         </widget>
        </item>
        <item row="1" column="7">
-        <widget class="QComboBox" name="comboBox_6">
+        <widget class="QComboBox" name="qu_price_comboBox">
          <item>
           <property name="text">
            <string>dog</string>
@@ -115,7 +115,7 @@
         </widget>
        </item>
        <item row="1" column="3">
-        <widget class="QComboBox" name="comboBox_3">
+        <widget class="QComboBox" name="qu_age_comboBox">
          <item>
           <property name="text">
            <string>dog</string>
@@ -124,7 +124,7 @@
         </widget>
        </item>
        <item row="1" column="1" colspan="2">
-        <widget class="QComboBox" name="comboBox_2">
+        <widget class="QComboBox" name="qu_class_comboBox">
          <item>
           <property name="text">
            <string>dog</string>
@@ -444,7 +444,7 @@ font: 75 15pt &quot;Ubuntu Condensed&quot;;</string>
      <rect>
       <x>10</x>
       <y>410</y>
-      <width>321</width>
+      <width>221</width>
       <height>231</height>
      </rect>
     </property>
@@ -458,8 +458,8 @@ font: 75 15pt &quot;Ubuntu Condensed&quot;;</string>
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
-       <width>301</width>
+       <y>10</y>
+       <width>201</width>
        <height>201</height>
       </rect>
      </property>
@@ -472,9 +472,9 @@ font: 75 15pt &quot;Ubuntu Condensed&quot;;</string>
      <widget class="QPlainTextEdit" name="intro_plainTextEdit">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>0</x>
         <y>30</y>
-        <width>281</width>
+        <width>201</width>
         <height>161</height>
        </rect>
       </property>
@@ -488,9 +488,9 @@ font: 75 15pt &quot;Ubuntu Condensed&quot;;</string>
    <widget class="QFrame" name="frame_5">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>240</x>
       <y>410</y>
-      <width>541</width>
+      <width>651</width>
       <height>231</height>
      </rect>
     </property>
@@ -504,7 +504,7 @@ font: 75 15pt &quot;Ubuntu Condensed&quot;;</string>
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
+       <y>10</y>
        <width>521</width>
        <height>201</height>
       </rect>
@@ -620,7 +620,7 @@ font: 75 15pt &quot;Ubuntu Condensed&quot;;</string>
        </item>
       </layout>
      </widget>
-     <widget class="QPushButton" name="ops_sell_btn">
+     <widget class="QPushButton" name="trans_sell_btn">
       <property name="geometry">
        <rect>
         <x>310</x>
@@ -636,7 +636,7 @@ font: 75 15pt &quot;Ubuntu Condensed&quot;;</string>
      <widget class="QPushButton" name="trans_help_btn">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>30</x>
         <y>160</y>
         <width>88</width>
         <height>25</height>
@@ -646,7 +646,7 @@ font: 75 15pt &quot;Ubuntu Condensed&quot;;</string>
        <string>help</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="ops_add_btn">
+     <widget class="QPushButton" name="trans_add_btn">
       <property name="geometry">
        <rect>
         <x>170</x>
@@ -657,6 +657,19 @@ font: 75 15pt &quot;Ubuntu Condensed&quot;;</string>
       </property>
       <property name="text">
        <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="trans_clear_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>clear</string>
       </property>
      </widget>
     </widget>

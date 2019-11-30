@@ -9,7 +9,7 @@ import time
 # pyqt5 class
 from PyQt5.QtCore import pyqtSlot, Qt
 from PyQt5.QtWidgets import QDialog, QMessageBox,QStatusBar
-from PyQt5 import QtGui
+# from PyQt5 import QtGui
 from PyQt5.QtGui import QIntValidator,QDoubleValidator,QRegExpValidator,QPixmap,QImage
 # from Ui_URgui import Ui_MainWindow
 # from ur_gui_ros_node import guiNode

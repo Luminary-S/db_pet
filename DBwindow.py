@@ -5,7 +5,7 @@
 Module implementing MainWindow.
 """
 #project path
-import re
+# import re
 # from PROJECTPATH import *
 import time,os
 # pyqt5 class

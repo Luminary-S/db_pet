@@ -52,8 +52,11 @@
       <property name="text">
        <string>zjj</string>
       </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
       <property name="placeholderText">
-       <string>zjj</string>
+       <string/>
       </property>
      </widget>
     </item>

@@ -2,12 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="950f2a5b-8b9e-4e45-8c89-ba7eb7ec9265" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DB.ui" beforeDir="false" afterPath="$PROJECT_DIR$/DB.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal-table.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/DB/animal-table.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal-table2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal/Alf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal/Bella.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal/Bob.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal/Daisy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal/Felix.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal/Poppy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal/Rex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal/Smokey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal/Thomas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal2/Alma.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal2/Amy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal2/Cloud.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal2/Cookie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal2/Happy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal2/Ivy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal2/Lucia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal2/Momo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal2/Sunny.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/animal2/Xila.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBsql.py" beforeDir="false" afterPath="$PROJECT_DIR$/DBsql.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DBwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/DBwindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ui_DB.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ui_DB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excleTosqlDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/excleTosqlDB.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ui_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="1512">
               <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
@@ -98,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,6 +131,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,16 +165,19 @@
       <updated>1574942487189</updated>
       <workItem from="1574942488762" duration="7783000" />
       <workItem from="1574962768269" duration="1022000" />
+      <workItem from="1574994878092" duration="869000" />
+      <workItem from="1575038735140" duration="19000" />
+      <workItem from="1575038777500" duration="142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8805000" />
+    <option name="totallyTimeSpent" value="9835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18858422" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19865696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -181,7 +206,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Ui_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="1512">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>

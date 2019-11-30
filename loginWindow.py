@@ -15,6 +15,7 @@ from PyQt5.QtGui import QIntValidator,QDoubleValidator,QRegExpValidator,QPixmap,
 # from ur_gui_ros_node import guiNode
 from Ui_login import Ui_Dialog
 from DBwindow import DBMainWindow
+from Pet import PET
 
 id_pwd_dict = {"store": "admin",
                 "alice":"alice",
@@ -33,6 +34,8 @@ class LGDialog(QDialog, Ui_Dialog):
         # self.setFixedSize(1440,950)
         self.init_show()
         self.id = ""
+        self.accDB = PET()
+        self.accDB.set_owner("account")
 
     def init_show(self):
         pass
@@ -54,13 +57,20 @@ class LGDialog(QDialog, Ui_Dialog):
         pwd_flag = 0
         id = self.lineEdit_account.text()
         pwd = self.lineEdit_password.text()
-        bool_id = id_pwd_dict.has_key(id)
-        bool_pwd = ( id_pwd_dict.get(id) == pwd )
-        # print(bool_id,bool_pwd)
-        if bool_id:
+        res = self.accDB.load_cols_from_db("id",id)
+        if res:
             account_flag = 1
-        if bool_pwd:
-            pwd_flag = 1
+            if res[1] == pwd:
+                pwd_flag = 1
+        # else:
+
+        # bool_id = id_pwd_dict.has_key(id)
+        # bool_pwd = ( id_pwd_dict.get(id) == pwd )
+        # print(bool_id,bool_pwd)
+        # if bool_id:
+        #     account_flag = 1
+        # if bool_pwd:
+        #     pwd_flag = 1
 
         all_flag = pwd_flag + account_flag
     

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource>
+    <file>resource/dog.ico</file>
+    <file>resource/background.jpg</file>
+  </qresource>
+</RCC>

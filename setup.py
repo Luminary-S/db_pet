@@ -9,9 +9,9 @@ from setuptools import setup
 
 APP = ['run.py']
 
-#自写模块放在DATA_FILES列表中
+
 DATA_FILES = ['add_rc.py', 'DBsql.py','Pet.py',  'setup.py',  'Ui_login.py','db2excle.py',  'DBwindow.py',  'loginWindow.py', 'Ui_DB.py']
-# 第三方库放在OPTIONS下的includes对应的列表中
+
 OPTIONS = { 
     'includes': 
     ['sip', 'PyQt5.QtCore', 'PyQt5.QtWidgets','PyQt5.QtGui','time','sys','pymysql','xlrd','xlwt','',],}

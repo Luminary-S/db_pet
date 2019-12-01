@@ -64,7 +64,7 @@ class PET():
     def choose_key_list_from_query_list(self, res_list, key):
         key_list = []
         key_num = self.attr_list.index(key)
-        if res_list > 0:
+        if len(res_list) > 0:
             for i in range(0,len(res_list)):
                 key_list.append(res_list[i][key_num])
         return key_list

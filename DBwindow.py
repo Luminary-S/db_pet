@@ -55,7 +55,9 @@ class DBMainWindow(QMainWindow, Ui_MainWindow):
         self.show_money(self.id)
 
     def init_show(self):
-        # pass
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap('./resource/dog.ico'), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.setWindowIcon(icon)
         self.img_post_btn.setEnabled(False)
         self.img_pre_btn.setEnabled(False)
         self.trans_sell_check_btn.setEnabled(False) 
@@ -208,6 +210,10 @@ class DBMainWindow(QMainWindow, Ui_MainWindow):
                     status = status + res[0] + ", "
                 status = status[:-2]
                 self.delete_duplicate()
+                
+                showname = res_list[0][0]
+                print(showname)
+                self.view_of_name_comboBox(showname)
             else:
                 status = status + "NO result!"
             self.set_his_textEdit(status)
@@ -224,11 +230,14 @@ class DBMainWindow(QMainWindow, Ui_MainWindow):
     @pyqtSlot()
     def on_qu_preview_btn_clicked(self):
         name = self.qu_name_comboBox.currentText()
-        # if 
+        self.view_of_name_comboBox(name)
+
+    def view_of_name_comboBox(self,name):        
         path = self.petDB.img_path
         imgName = path + name + ".jpg"
+        print(imgName)
         self.view_img_in_label(imgName)
-        self.img_name_lineEdit.setText(self.qu_name_comboBox.currentText())
+        self.img_name_lineEdit.setText(name)
 
 
     def view_img_in_label(self, imgName):

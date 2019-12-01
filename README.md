@@ -24,6 +24,10 @@ In Query frame, through "load", you can load all pets attributes to the combobox
    ```
    pyrcc5 add.qrc -o add_rc.py
    ```
+3. pack to exe
+   ```
+   pyinstaller -F -w -D run.py
+   ```
 
 ## import reference
 1. [使用pymysql简单创建mysql数据库](https://blog.csdn.net/cnmnui/article/details/99324619)

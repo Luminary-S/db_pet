@@ -212,18 +212,21 @@ class DBMainWindow(QMainWindow, Ui_MainWindow):
                 self.delete_duplicate()
                 
                 showname = res_list[0][0]
-                print(showname)
+                # print(showname)
                 self.view_of_name_comboBox(showname)
             else:
                 status = status + "NO result!"
+                self.img_name_lineEdit.setText("")
+                label = self.pet_img_label
+                label.setPixmap(QPixmap("")) 
             self.set_his_textEdit(status)
             # self.img_name_lineEdit.setText(self.qu_name_comboBox.currentText())
         elif flag == 0:
             
             self.warning_msgbox("please select at least one query choice!")
-        self.img_name_lineEdit.setText("")
-        label = self.pet_img_label
-        label.setPixmap(QPixmap(""))  
+            self.img_name_lineEdit.setText("")
+            label = self.pet_img_label
+            label.setPixmap(QPixmap(""))  
         # return choice_dict
         # pass
 
@@ -235,7 +238,7 @@ class DBMainWindow(QMainWindow, Ui_MainWindow):
     def view_of_name_comboBox(self,name):        
         path = self.petDB.img_path
         imgName = path + name + ".jpg"
-        print(imgName)
+        # print(imgName)
         self.view_img_in_label(imgName)
         self.img_name_lineEdit.setText(name)
 
@@ -245,7 +248,7 @@ class DBMainWindow(QMainWindow, Ui_MainWindow):
         try:
             imgName = self.imgName
             label = self.pet_img_label
-            # print(imgName)
+            print(imgName)
             jpg = QtGui.QPixmap(imgName).scaled(label.width(), label.height())
             label.setPixmap(jpg)
         except:
